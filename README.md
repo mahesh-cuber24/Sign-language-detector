@@ -1,9 +1,9 @@
 # Sign Language Detection using Deep Learning
 
-## Overview
+## About
 This project implements a Hand Gesture Recognition System using computer vision and deep learning. The system captures hand gestures in real-time, processes them with Mediapipe, and classifies them into predefined categories using a trained PyTorch model.
 
-## Features
+## Featuring Details
 - **Real-Time Hand Gesture Detection**: Uses Mediapipe to extract hand landmarks from live video.
 - **Customizable Dataset**: Collects and processes gesture data for training.
 - **Deep Learning Model**: Implements a PyTorch-based neural network for gesture classification.
@@ -19,7 +19,7 @@ This project implements a Hand Gesture Recognition System using computer vision 
   - scikit-learn  
   - pickle  
 
-## Project Structure
+## Project Model
 - `data_collection.py`: Captures gesture data from webcam and stores it in labeled folders.
 - `data_processing.py`: Extracts and normalizes hand landmarks using Mediapipe, stores them in a `.pickle` file.
 - `model_training.py`: Trains a PyTorch neural network on the processed data.
@@ -29,7 +29,7 @@ This project implements a Hand Gesture Recognition System using computer vision 
 - `data.pickle`: Processed and structured hand landmark data.
 - `model.pth`: Trained PyTorch model.
 
-## Usage Instructions
+## Details
 
 ### Data Collection
 Start the data collection script:
@@ -80,13 +80,13 @@ The script displays the webcam feed with predictions and bounding boxes for reco
 - **PyTorch Model**: A simple feedforward neural network for gesture classification.
 - **Label Mapping**: Customize labels for gestures in the `labels_dict` dictionary.
 
-## Example Output
+## Output
 
 Real-time webcam feed with:
 - **Bounding Box**: Highlights detected hands.
 - **Predicted Gesture**: Displays the recognized gesture above the bounding box.
 
-## Challenges and Improvements
+## Limitations and Further Improvements
 
 - **Lighting and Backgrounds**: Train the model with diverse lighting conditions and backgrounds for robustness.
 - **Class Overlap**: Ensure gestures are visually distinct for better accuracy.
